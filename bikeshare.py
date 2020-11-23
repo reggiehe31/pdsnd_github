@@ -23,33 +23,33 @@ def get_filters():
     print('Hello! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     # Use variable judge0 as a criteria to check if the city name is valid or not. If not, break the while loop
-    judge0 = 0
-    while judge0 < 1:
+    i = 0
+    while i < 1:
         city = input('\nPlease input the city name you want to analyze: ').lower()
         if city in CITY_DATA:
-            jugde0 = 1
+            i = 1
             break
         else:
             print('\nPlease input valid city name\n')
 
     # TO DO: get user input for month (all, january, february, ... , june)
     # Use variable judge1 as a criteria to check if the month name is valid or not. If not, break the while loop
-    judge1 = 0
-    while judge1 < 1:
+    j = 0
+    while j < 1:
         month = input('\nPlease input the name of month you want to analyze: ').lower()
         if month in months:
-            judge1 = 1
+            j = 1
             break
         else:
             print('\nPlease input valid month name!\n')
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     # Use variable judge2 as a criteria to check if the day of week name is valid or not. If not, break the while loop
-    judge2 = 0
-    while judge2 < 1:
+    k = 0
+    while k < 1:
         day = input('\nPlease input the name of the day of week you want to analyze: ').lower()
         if day in days:
-            judge2 = 1
+            k = 1
             break
         else:
             print('\nPlease input valid day of week name!\n')
@@ -205,16 +205,16 @@ def main():
         user_stats(df)
 
         #A while loop which could view consecutive five rows of the csv. file. The loop will end if the user say no
-        judge3 = 0
-        i = 0
-        while judge3 < 1:
+        l = 0
+        m = 0
+        while l < 1:
             answer = input('\nDo you want to see the raw data of your chosen city?(yes/no): ').lower()
             if answer == 'yes':
                 print(df.iloc[i:i+5])
             else:
-                judge3 = 1
+                l = 1
                 break
-            i += 5
+            m += 5
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
