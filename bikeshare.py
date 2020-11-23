@@ -1,6 +1,6 @@
 import time
 import pandas as pd
-import numpy as np
+
 
 #Assign dictionary of cities name and related csv. file
 CITY_DATA = { 'chicago': 'chicago.csv',
