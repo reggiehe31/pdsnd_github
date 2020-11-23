@@ -151,12 +151,12 @@ def trip_duration_stats(df):
 
     # TO DO: display total travel time
     # Add up the travel time from the trip duration column
-    total_travel_time = df['Trip Duration'].sum()
+    total_time = df['Trip Duration'].sum()
     print('The total travel time is (unit: seconds): ',total_travel_time)
 
     # TO DO: display mean travel time
     # Calculate the average travel time from the trip duation column
-    mean_travel_time = df['Trip Duration'].mean()
+    mean_time = df['Trip Duration'].mean()
     print('The mean travel time is (unit: seconds): ',mean_travel_time)
 
 def user_stats(df):
