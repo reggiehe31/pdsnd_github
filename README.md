@@ -1,15 +1,14 @@
 ### Date created
-Include the date you created this project and README file.
+Nov 23, 2020
 
 ### Project Title
-Replace the Project Title
+Bikeshare Project
 
 ### Description
-Describe what your project is about and what it does
+Use the modules, Numpy and Pandas to analyze the bikeshare data in Chicago, Washington and New York.
 
 ### Files used
-Include the files used
+bikeshare.py, chiacago.csv, washington.csv, new_york_city.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+None
